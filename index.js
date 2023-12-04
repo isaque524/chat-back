@@ -29,6 +29,6 @@ const dbUser = process.env.DB_USER
 const dbPassword = process.env.DB_PASS 
 
 mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@chat-app.jtbczn1.mongodb.net/`).then(()=>{
-    app.listen(3000)
+    app.listen(4000)
     console.log("conectou ao banco!")
 }).catch((err) => console.log(err))
